@@ -1,2 +1,2 @@
 # Block_statistics_resampling
-fractional weight resampling algorithm (using block statistics) to resmapling from one raster layer to another. This example uses the the Stats SA Basic spatial Unit (BSU) grid as the output.
+Fractional weight resampling algorithm (using block statistics) example to resmapling from one raster to another. This example uses the the Stats SA Basic spatial Unit (BSU) grid as the output. Resampling should be done in chunks to reduce computation time - each 'chunk resmapling' will produce a weighted mean and a weighted sum output. Once all the 'chunk resampling' has been run, call merge.py to merge all the individual rasters together and create a final product. Users will have to supply their own input raster in the resampling_alg.py file. 
